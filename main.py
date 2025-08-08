@@ -1,4 +1,6 @@
-from app import app, db # Importamos la aplicación creada en app/__init__.py
+from app import create_app, db
+
+app = create_app() # Importamos la aplicación creada en app/__init__.py
 
 if __name__ == "__main__":
     with app.app_context():
